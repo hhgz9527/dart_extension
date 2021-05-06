@@ -22,10 +22,21 @@ extension YGStringExntesion on String {
     return this.substring(1, this.length);
   }
 
+  /// Check text is email
+  ///
+  /// `'1@qq.com'.isEmail` -> true
   bool get isEmail {
     RegExp exp = RegExp(r"^[\w!#$%&'*+/=?^_`{|}~-]+(?:\.[\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\w](?:[\w-]*[\w])?\.)+[\w](?:[\w-]*[\w])?");
     print(this);
     return exp.hasMatch(this);
+  }
+
+  /// get string last characters
+  /// 
+  /// `'last'.last` => `'t'`
+  String get last {
+    if (this == '') return '';
+    return this.substring(this.length - 1);
   }
 
   /// remove string first [count] chart
