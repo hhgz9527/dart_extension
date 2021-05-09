@@ -1,14 +1,21 @@
 # dart_extension
 
-A new Flutter package project.
+Dart extension is a native Dart extesnions with handy methods.
 
-## Getting Started
+# Installation
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+In `pubspec.yaml` file, add this:
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+dart_extension:
+  git: 
+    url: git://github.com/hhgz9527/dart_extension
+```
+
+because this package not upload to pub.dev, so need use git.
+
+# Extesnions
+
+- [String Extensions](https://github.com/hhgz9527/dart_extension/blob/main/lib/yg_string_extension.dart)
+- [Date Extensions](https://github.com/hhgz9527/dart_extension/blob/main/lib/yg_date_extension.dart)
+- [Color Extensions](https://github.com/hhgz9527/dart_extension/blob/main/lib/yg_color_extension.dart)
