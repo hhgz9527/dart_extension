@@ -6,13 +6,19 @@ Dart extension is a native Dart extesnions with handy methods.
 
 In `pubspec.yaml` file, add this:
 
-```
+```yaml
 dart_extension:
   git: 
     url: git://github.com/hhgz9527/dart_extension
 ```
 
 because this package not upload to pub.dev, so need use git.
+
+# Used
+
+```dart
+import 'package:dart_extension/dart_extension.dart';
+```
 
 # Extesnions
 
