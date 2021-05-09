@@ -31,4 +31,10 @@ void main() {
       expect('1@qq.com'.isEmail, true);
     });
   });
+
+  group('last', () {
+    test('get last chart', () {
+      expect('last'.last, 't');
+    });
+  });
 }
