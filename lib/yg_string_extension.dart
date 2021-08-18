@@ -11,7 +11,7 @@ extension YGStringExntesion on String {
   /// remove string last [count] chart
   ///
   /// 'last' -> dropLastWith(2) -> 'la'
-  String dropLastWith(num count) {
+  String dropLastWith(int count) {
     return this.substring(0, this.length - count);
   }
 
@@ -42,7 +42,7 @@ extension YGStringExntesion on String {
   /// remove string first [count] chart
   ///
   /// 'last' -> dropFristWith(2) -> 'st'
-  String dropFristWith(num count) {
+  String dropFristWith(int count) {
     return this.substring(count, this.length);
   }
 }
