@@ -8,3 +8,4 @@ import 'package:intl/intl.dart';
 part 'yg_string_extension.dart';
 part 'yg_color_extension.dart';
 part 'yg_date_extension.dart';
+part 'yg_list_extension.dart';
