@@ -20,7 +20,7 @@ extension YGDateExtension on DateTime {
   ///
   /// DateTime.now().startOfWeek
   DateTime get startOfWeek {
-    DateTime now = DateTime.now();
+    DateTime now = this;
     int currentDay = now.weekday;
     DateTime firstDayOfWeek = now.subtract(Duration(days: currentDay));
     return DateTime(firstDayOfWeek.year, firstDayOfWeek.month, firstDayOfWeek.day);
@@ -30,10 +30,20 @@ extension YGDateExtension on DateTime {
   ///
   /// DateTime.now().endOfWeek
   DateTime get endOfWeek {
-    DateTime now = DateTime.now();
+    DateTime now = this;
     int currentDay = now.weekday;
     DateTime endDayOfWeek = now.add(Duration(days: DateTime.daysPerWeek - currentDay));
     return DateTime(endDayOfWeek.year, endDayOfWeek.month, endDayOfWeek.day);
+  }
+
+  DateTime get startOfDay {
+    DateTime now = this;
+    return DateTime(now.year, now.month, now.day);
+  }
+
+  DateTime get endOfDay {
+    DateTime now = this;
+    return DateTime(now.year, now.month, now.day, 23, 59, 59);
   }
 
   int _daysInMonth(DateTime date) {
